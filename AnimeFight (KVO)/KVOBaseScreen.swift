@@ -21,11 +21,17 @@ class KVOBaseScreen: UIViewController {
         chooseButton.addTarget(self, action: #selector(goToSelection), for: .touchUpInside)
         self.observable = KVOService.shared.observe(\.kvoModel, options: [.old, .new]) {
             [weak self] property, change in
-            print(property.kvoModel.name)
             let newVal = change.newValue
             self?.setView(kvoModel: newVal!)
         }
     }
+    
+    func setView(kvoModel: KVOModel) {
+        self.mainImageView.image = UIImage(named: kvoModel.image)
+        self.nameLabel.text = kvoModel.name
+        self.view.backgroundColor = kvoModel.color
+    }
+
 
     @objc func goToSelection() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "KVOSelectionScreen") as! KVOSelectionScreen
