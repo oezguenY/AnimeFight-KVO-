@@ -15,6 +15,7 @@
 		E321361B28033C6400585F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E321361928033C6400585F3E /* LaunchScreen.storyboard */; };
 		E321362328033CC000585F3E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E321362228033CC000585F3E /* Constants.swift */; };
 		E321362528033D2300585F3E /* KVOSelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E321362428033D2300585F3E /* KVOSelectionScreen.swift */; };
+		E321362928033F4E00585F3E /* KVOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E321362828033F4E00585F3E /* KVOModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E321361C28033C6400585F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E321362228033CC000585F3E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E321362428033D2300585F3E /* KVOSelectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOSelectionScreen.swift; sourceTree = "<group>"; };
+		E321362828033F4E00585F3E /* KVOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E321361028033C6300585F3E /* SceneDelegate.swift */,
 				E321361228033C6300585F3E /* KVOBaseScreen.swift */,
 				E321362428033D2300585F3E /* KVOSelectionScreen.swift */,
+				E321362828033F4E00585F3E /* KVOModel.swift */,
 				E321362228033CC000585F3E /* Constants.swift */,
 				E321361428033C6300585F3E /* Main.storyboard */,
 				E321361728033C6400585F3E /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			files = (
 				E321361328033C6300585F3E /* KVOBaseScreen.swift in Sources */,
 				E321360F28033C6300585F3E /* AppDelegate.swift in Sources */,
+				E321362928033F4E00585F3E /* KVOModel.swift in Sources */,
 				E321361128033C6300585F3E /* SceneDelegate.swift in Sources */,
 				E321362528033D2300585F3E /* KVOSelectionScreen.swift in Sources */,
 				E321362328033CC000585F3E /* Constants.swift in Sources */,

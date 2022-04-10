@@ -8,15 +8,23 @@
 import UIKit
 
 class KVOBaseScreen: UIViewController {
-    
+        
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var chooseButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
+    
+    var observable: Any?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         chooseButton.layer.cornerRadius = chooseButton.frame.size.height/2
         chooseButton.addTarget(self, action: #selector(goToSelection), for: .touchUpInside)
+        self.observable = KVOService.shared.observe(\.kvoModel, options: [.old, .new]) {
+            [weak self] property, change in
+            print(property.kvoModel.name)
+            let newVal = change.newValue
+            self?.setView(kvoModel: newVal!)
+        }
     }
 
     @objc func goToSelection() {
